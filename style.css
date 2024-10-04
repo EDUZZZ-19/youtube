@@ -1,6 +1,234 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    scroll-behavior: smooth
+    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.contenedor {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: minmax(90px, 90px) auto;
+    grid-template-rows: 60px auto;
+    grid-template-areas: "header header" "menu contenido";
+    transition: all .3s ease;
+}
+
+.contenedor.active {
+    grid-template-columns: minmax(300px, 18%) auto;
+}
+
+.header {
+    grid-area: header;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    justify-content: space-between;
+    grid-gap: 20px;
+    grid-template-areas: "logo busqueda iconos";
+}
+
+.header .contenedor-logo {
+    grid-area: logo;
+    display: flex;
+    align-items: center;
+}
+
+.header .contenedor-logo .boton-menu {
+    border: none;
+    padding: 10px;
+    background: none;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 100px;
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+
+.youtube-logo {
+    height: 24px;
+    margin-right: 10px;
+}
+
+.menu-lateral a {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    color: #000;
+}
+
+.menu-lateral .fas {
+    margin-right: 15px;
+    width: 20px;
+    text-align: center;
+}
+
+.header .contenedor-logo .boton-menu:hover {
+    background: #E7E7E7;
+}
+
+.header .contenedor-logo .logo {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    position: relative;
+    top: 2px;
+}
+
+.header .barra-busqueda {
+    grid-area: busqueda;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header .barra-busqueda input {
+    min-width: 60%;
+    padding: 0 15px;
+    height: 35px;
+    line-height: 35px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.header .barra-busqueda button {
+    height: 35px;
+    border: 1px solid #ccc;
+    border-left: none;
+    border-radius: 15px;
+    color: #545454;
+    background: #f8f8f8;
+    padding: 0 25px;
+    cursor: pointer;
+}
+
+.header .barra-busqueda button:hover {
+    background: #f5f5f5;
+}
+
+.menu-lateral {
+    grid-area: menu;
+    background: #fff;
+    overflow: hidden;
+}
+
+.menu-lateral a:hover {
+    background: #e5e5e5;
+}
+
+.menu-lateral a.active {
+    background: #e5e5e5;
+    font-weight: bold;
+}
+
+.menu-lateral a.active .fas {
+    color: #ff0000;
+}
+
+.menu-lateral hr {
+    margin: 20px 0;
+    border: 1px solid #dfdfdf;
+}
+
+.content {
+    width: calc(100vw - 240px);
+}
+
+.chips-wrapper {
+    overflow: scroll;
+    background-color: #181818;
+    display: flex;
+    padding-left: 14px;
+}
+
+.chips-wrapper::-webkit-scrollbar {
+    height: 0;
+}
+
+.chip {
+    margin: 12px 6px;
+    background-color: #373737;
+    padding: 6px 12px;
+    border: 1px solid;
+    border-radius: 16px;
+    white-space: nowrap;
+}
+
+.chip:hover {
+    background-color: #4d4d4d;
+}
+
+p {
+    color: white;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.video-container {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.video-box img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.video-details {
+    display: flex;
+    padding: 10px;
+}
+
+.channel-logo img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.detail {
+    flex: 1;
+}
+
+.title {
+    font-size: 14px;
+    margin: 0;
+}
+
+.channel-name {
+    font-size: 12px;
+    color: #555;
+}
+
+.view-upload {
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+    color: #777;
 }

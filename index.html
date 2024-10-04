@@ -1,11 +1,163 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald&display=swap" rel="stylesheet">
+    <title>YouTube Clone</title>
 </head>
 <body>
-    
+    <div class="contenedor active" id="contenedor">
+        <header class="header">
+            <div class="contenedor-logo">
+                <button id="boton-menu" class="boton-menu"><i class="fas fa-bars"></i></button>
+                <a href="#" class="logo"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg" alt="YouTube Logo" class="youtube-logo"></a>
+            </div>
+            <div class="barra-busqueda">
+                <input type="text" placeholder="Buscar">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </div>
+        </header>
+        <nav class="menu-lateral">
+            <a href="#" class="active"><i class="fas fa-home"></i> Inicio</a>
+            <a href="#"><i class="fas fa-fire"></i> Shorts</a>
+            <a href="#"><i class="fas fa-star"></i> Suscripciones</a>
+            <hr>
+            <a href="#"><i class="fas fa-history"></i> Historial</a>
+            <a href="#"><i class="fas fa-video"></i> Mis videos</a>
+            <a href="#"><i class="fas fa-clock"></i> Ver más tarde</a>
+            <hr>
+            <a href="#"><i class="fas fa-cog"></i> Configuración</a>
+            <a href="#"><i class="fas fa-question-circle"></i> Ayuda</a>
+            <a href="#"><i class="fas fa-comment-dots"></i> Enviar sugerencias</a>
+        </nav>
+        <div class="content">
+            <div class="chips-wrapper">
+                <div class="chip"><p>Todo</p></div>
+                <div class="chip"><p>Videojuegos</p></div>
+                <div class="chip"><p>Dragon ball</p></div>
+                <div class="chip"><p>FC barcelona</p></div>
+                <div class="chip"><p>Musica</p></div>
+                <div class="chip"><p>Peliculas</p></div>
+                <div class="chip"><p>The beatles</p></div>
+                <div class="chip"><p>Kanye west</p></div>
+                <div class="chip"><p>Deadpool</p></div>
+                <div class="chip"><p>Marvel</p></div>
+                <div class="chip"><p>Anime</p></div>
+                <div class="chip"><p>Programación</p></div>
+            </div>
+            <div class="video-grid">
+                <div class="video-container">
+                    <a href="" class="video-box">
+                        <img src="./img/R (1).jpeg" alt="">
+                    </a>
+                    <div class="video-details">
+                        <div class="channel-logo">
+                            <img src="./img/unnamed (1).jpg" alt="">
+                        </div>
+                        <div class="detail">
+                            <h3 class="title">Minecraft - "Minero" ft. StarkinDJ (Parodia de "Torero" de Chayanne)</h3>
+                            <div class="channel-name">elrubiusomg</div>
+                            <div class="view-upload">
+                                <div class="views">109 M de visualizaciones</div>
+                                <div class="upload">Hace 12 años</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-container">
+                    <a href="" class="video-box">
+                        <img src="./img/maxresdefault (2).jpg" alt="">
+                    </a>
+                    <div class="video-details">
+                        <div class="channel-logo">
+                            <img src="./img/rincondegiorgio.jpg" alt="">
+                        </div>
+                        <div class="detail">
+                            <h3 class="title">EL RETO DEL PALOMO COJO 3 con Auronplay | El fin de la TRILOGÍA</h3>
+                            <div class="channel-name">El Rincón De Giorgio</div>
+                            <div class="view-upload">
+                                <div class="views">14 M de visualizaciones</div>
+                                <div class="upload">Hace 6 años</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-container">
+                    <a href="" class="video-box">
+                        <img src="./img/R (2).jpeg" alt="">
+                    </a>
+                    <div class="video-details">
+                        <div class="channel-logo">
+                            <img src="./img/channels4_profile.jpg" alt="">
+                        </div>
+                        <div class="detail">
+                            <h3 class="title">KARMALAND - LA MANSION DE VEGETTA777</h3>
+                            <div class="channel-name">VEGETTA777</div>
+                            <div class="view-upload">
+                                <div class="views">3,3 M de visualizaciones</div>
+                                <div class="upload">Hace 4 años</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-container">
+                    <a href="" class="video-box">
+                        <img src="./img/OIP.jpeg" alt="">
+                    </a>
+                    <div class="video-details">
+                        <div class="channel-logo">
+                            <img src="./img/unnamed.jpg" alt="">
+                        </div>
+                        <div class="detail">
+                            <h3 class="title">Lionel Messi ● 17 Genius Highlights of 2017 Season ||HD||</h3>
+                            <div class="channel-name">Messi Magic</div>
+                            <div class="view-upload">
+                                <div class="views">3,1 M de visualizaciones</div>
+                                <div class="upload">Hace 7 años</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-container">
+                    <a href="" class="video-box">
+                        <img src="./img/maxresdefault (1).jpg" alt="">
+                    </a>
+                    <div class="video-details">
+                        <div class="channel-logo">
+                            <img src="./img/channels4_profile (1).jpg" alt="">
+                        </div>
+                        <div class="detail">
+                            <h3 class="title">He fabricado un MINI PC Gaming para AURONPLAY!</h3>
+                            <div class="channel-name">Nate Gentile</div>
+                            <div class="view-upload">
+                                <div class="views">1,7 M de visualizaciones</div>
+                                <div class="upload">Hace 4 años</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="video-container">
+                    <a href="" class="video-box">
+                        <img src="./img/hqdefault.webp" alt="">
+                    </a>
+                    <div class="video-details">
+                        <div class="channel-logo">
+                            <img src="./img/unnamed (2).jpg" alt="">
+                        </div>
+                        <div class="detail">
+                            <h3 class="title">ESPECIAL DE HALLOWEEN - Five Nights At Freddy's | Fernanfloo</h3>
+                            <div class="channel-name">Fernanfloo</div>
+                            <div class="view-upload">
+                                <div class="views">62 M de visualizaciones</div>
+                                <div class="upload">Hace 9 años</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
